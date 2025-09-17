@@ -35,12 +35,12 @@ export function Brain() {
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <Image 
-            src="https://picsum.photos/seed/3dbrain/1200/800"
+            src="https://picsum.photos/seed/new3dbrain/1200/800"
             alt="Cérebro 3D"
             width={800}
             height={533}
             className="object-contain opacity-20"
-            data-ai-hint="3d brain"
+            data-ai-hint="3d brain technology"
         />
       </div>
       
