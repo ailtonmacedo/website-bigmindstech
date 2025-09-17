@@ -81,7 +81,7 @@
   }
   html,
   body {
-    @apply overflow-x-hidden;
+    overflow-x: hidden;
   }
   body {
     @apply bg-background text-foreground;
