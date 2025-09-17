@@ -1,94 +1,19 @@
+import Image from 'next/image';
+
 export function Logo() {
+  const logoBase64 =
+    'data:image/png;base64,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';
+
   return (
     <div className="flex items-center gap-3">
-      <svg
-        width="152"
-        height="44"
-        viewBox="0 0 152 44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-auto text-primary"
-      >
-        <path
-          d="M10.8359 4.60156C10.8359 5.92849 9.7712 7.00001 8.45264 7.00001C7.13408 7.00001 6.06934 5.92849 6.06934 4.60156C6.06934 3.27464 7.13408 2.20312 8.45264 2.20312C9.7712 2.20312 10.8359 3.27464 10.8359 4.60156Z"
-          fill="currentColor"
-        />
-        <path
-          d="M2.19336 10.0501C8.29177 10.0501 9.42398 16.5059 15.3535 16.5059C21.2831 16.5059 22.3273 10.0501 28.3184 10.0501C34.3094 10.0501 35.3096 16.5059 41.293 16.5059C47.2764 16.5059 48.2765 10.0501 54.2599 10.0501"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M15.3535 16.5059C9.42398 16.5059 8.29177 22.9616 2.19336 22.9616"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M28.3184 10.0501C22.3273 10.0501 21.2831 3.59432 15.3535 3.59432C9.42398 3.59432 8.29177 10.0501 2.19336 10.0501"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M28.3184 22.9616C22.3273 22.9616 21.2831 16.5059 15.3535 16.5059"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M41.293 16.5059C35.3096 16.5059 34.3094 22.9616 28.3184 22.9616"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M54.2598 10.0501C48.2764 10.0501 47.2763 3.59432 41.2929 3.59432C35.3095 3.59432 34.3094 10.0501 28.3183 10.0501"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M54.2598 22.9616C48.2764 22.9616 47.2763 16.5059 41.2929 16.5059"
-          stroke="currentColor"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M49.5225 28.0938C49.5225 29.4207 48.4577 30.4922 47.1392 30.4922C45.8206 30.4922 44.7559 29.4207 44.7559 28.0938C44.7559 26.7668 45.8206 25.6953 47.1392 25.6953C48.4577 25.6953 49.5225 26.7668 49.5225 28.0938Z"
-          fill="currentColor"
-        />
-        <text
-          fill="currentColor"
-          xmlSpace="preserve"
-          style={{ whiteSpace: 'pre' }}
-          fontFamily="Lexend"
-          fontSize="24"
-          fontWeight="bold"
-          letterSpacing="0em"
-        >
-          <tspan x="62" y="24.5">BigMinds</tspan>
-        </text>
-        <text
-          fill="currentColor"
-          xmlSpace="preserve"
-          style={{ whiteSpace: 'pre' }}
-          fontFamily="Lexend"
-          fontSize="16"
-          fontWeight="normal"
-          letterSpacing="0em"
-        >
-          <tspan x="112" y="42">Tech</tspan>
-        </text>
-      </svg>
+      <Image
+        src={logoBase64}
+        alt="BigMinds Tech Logo"
+        width={150}
+        height={44}
+        className="h-8 w-auto"
+        priority
+      />
     </div>
   );
 }
