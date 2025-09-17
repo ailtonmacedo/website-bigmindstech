@@ -35,7 +35,7 @@ export function Brain() {
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <Image 
-            src="https://picsum.photos/seed/another3dbrain/1200/800"
+            src="https://images.unsplash.com/photo-1620387532313-a8527a890a8a?q=80&w=1200&auto=format&fit=crop"
             alt="Cérebro 3D"
             width={800}
             height={533}
