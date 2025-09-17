@@ -29,12 +29,12 @@ export function InteractiveBrain() {
 
   return (
     <div
-      className="relative w-full max-w-5xl mx-auto h-[60vh] flex items-center justify-center"
+      className="relative w-full min-h-screen flex items-center justify-center"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className="relative w-full h-full transition-transform duration-300 ease-out"
+        className="absolute inset-0 transition-transform duration-300 ease-out"
         style={{ transform, willChange: 'transform' }}
       >
         {brainImage && (
@@ -43,22 +43,22 @@ export function InteractiveBrain() {
             alt={brainImage.description}
             data-ai-hint={brainImage.imageHint}
             fill
-            className="object-contain"
+            className="object-cover"
             priority
           />
         )}
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center text-center p-8"
-          style={{ transform: 'translateZ(60px)' }}
-        >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground/80">
-            Revolucionando <br />
-            <span className="text-primary">IA & Dados</span> para Negócios
-          </h1>
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl" style={{ transform: 'translateZ(40px)' }}>
-            Criamos soluções de inteligência artificial e produtos de dados que impulsionam negócios escaláveis e inovadores.
-          </p>
-        </div>
+      </div>
+      <div
+        className="relative z-10 flex flex-col items-center justify-center text-center p-8"
+        style={{ transform: 'translateZ(60px)' }}
+      >
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground/80">
+          Revolucionando <br />
+          <span className="text-primary">IA & Dados</span> para Negócios
+        </h1>
+        <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl" style={{ transform: 'translateZ(40px)' }}>
+          Criamos soluções de inteligência artificial e produtos de dados que impulsionam negócios escaláveis e inovadores.
+        </p>
       </div>
     </div>
   );
