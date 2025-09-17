@@ -2,51 +2,93 @@ export function Logo() {
   return (
     <div className="flex items-center gap-3">
       <svg
-        width="35"
-        height="34"
-        viewBox="0 0 35 34"
+        width="152"
+        height="44"
+        viewBox="0 0 152 44"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="h-8 w-auto text-primary"
       >
         <path
-          d="M6.4199 13.7C8.2199 12 9.4199 12.3 10.4199 14.4C11.4199 16.5 10.9199 18.1 9.4199 19.1C7.9199 20.1 6.1199 19.6 5.1199 17.5C4.1199 15.4 4.6199 13.8 6.4199 13.7Z"
-          stroke="currentColor"
-          strokeWidth="2.5"
-        />
-        <path
-          d="M10.1699 19.3C10.7199 18.2 11.5199 17.8 12.8199 18C14.1199 18.2 14.8199 19.2 14.8199 20.7C14.8199 22.2 14.2199 23.3 12.9199 23.6C11.6199 23.9 10.5199 23.4 10.0199 22.3"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M14.82 20.8C15.82 17.9 17.82 17.1 19.82 18.1C21.82 19.1 22.42 21.6 21.42 24.5"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M21.4199 24.6C22.0199 22.9 23.1199 22 24.5199 21.9C25.9199 21.8 26.9199 22.7 27.1199 24.2C27.3199 25.7 26.7199 27.1 25.4199 27.6C24.1199 28.1 22.9199 27.7 22.3199 26.5"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M26.9199 24.1C28.2199 20.3 30.8199 18.8 33.3199 20.2C35.8199 21.6 36.6199 25.4 35.3199 29.2"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M2.3 11.2C2.3 9.7 3.4 8.6 4.8 8.6C6.2 8.6 7.3 9.7 7.3 11.2C7.3 12.7 6.2 13.8 4.8 13.8C3.4 13.8 2.3 12.7 2.3 11.2Z"
+          d="M10.8359 4.60156C10.8359 5.92849 9.7712 7.00001 8.45264 7.00001C7.13408 7.00001 6.06934 5.92849 6.06934 4.60156C6.06934 3.27464 7.13408 2.20312 8.45264 2.20312C9.7712 2.20312 10.8359 3.27464 10.8359 4.60156Z"
           fill="currentColor"
         />
+        <path
+          d="M2.19336 10.0501C8.29177 10.0501 9.42398 16.5059 15.3535 16.5059C21.2831 16.5059 22.3273 10.0501 28.3184 10.0501C34.3094 10.0501 35.3096 16.5059 41.293 16.5059C47.2764 16.5059 48.2765 10.0501 54.2599 10.0501"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M15.3535 16.5059C9.42398 16.5059 8.29177 22.9616 2.19336 22.9616"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M28.3184 10.0501C22.3273 10.0501 21.2831 3.59432 15.3535 3.59432C9.42398 3.59432 8.29177 10.0501 2.19336 10.0501"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M28.3184 22.9616C22.3273 22.9616 21.2831 16.5059 15.3535 16.5059"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M41.293 16.5059C35.3096 16.5059 34.3094 22.9616 28.3184 22.9616"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M54.2598 10.0501C48.2764 10.0501 47.2763 3.59432 41.2929 3.59432C35.3095 3.59432 34.3094 10.0501 28.3183 10.0501"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M54.2598 22.9616C48.2764 22.9616 47.2763 16.5059 41.2929 16.5059"
+          stroke="currentColor"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M49.5225 28.0938C49.5225 29.4207 48.4577 30.4922 47.1392 30.4922C45.8206 30.4922 44.7559 29.4207 44.7559 28.0938C44.7559 26.7668 45.8206 25.6953 47.1392 25.6953C48.4577 25.6953 49.5225 26.7668 49.5225 28.0938Z"
+          fill="currentColor"
+        />
+        <text
+          fill="currentColor"
+          xmlSpace="preserve"
+          style={{ whiteSpace: 'pre' }}
+          fontFamily="Lexend"
+          fontSize="24"
+          fontWeight="bold"
+          letterSpacing="0em"
+        >
+          <tspan x="62" y="24.5">BigMinds</tspan>
+        </text>
+        <text
+          fill="currentColor"
+          xmlSpace="preserve"
+          style={{ whiteSpace: 'pre' }}
+          fontFamily="Lexend"
+          fontSize="16"
+          fontWeight="normal"
+          letterSpacing="0em"
+        >
+          <tspan x="112" y="42">Tech</tspan>
+        </text>
       </svg>
-      <div className="flex items-baseline">
-        <span className="font-headline text-2xl font-bold leading-none">BigMinds</span>
-        <span className="ml-1.5 text-lg font-light">Tech</span>
-      </div>
     </div>
   );
 }
