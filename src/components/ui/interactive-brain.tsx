@@ -15,15 +15,19 @@ export function InteractiveBrain() {
     const yPos = (clientY - offsetHeight / 2) / 25;
 
     setTransform(
-      `perspective(1000px) rotateY(${xPos}deg) rotateX(${-yPos}deg) scale(1.1)`
+      `perspective(1000px) rotateY(${xPos}deg) rotateX(${-yPos}deg) scale(2.2)`
     );
   };
 
   const handleMouseLeave = () => {
     setTransform(
-      'perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1)'
+      'perspective(1000px) rotateY(0deg) rotateX(0deg) scale(2)'
     );
   };
+
+  useEffect(() => {
+    handleMouseLeave();
+  }, []);
 
   const brainImage = PlaceHolderImages.find(img => img.id === '3d-brain-hero');
 
