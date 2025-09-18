@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "3d-brain-hero",
-      "description": "Uma imagem de um cérebro 3D com um fundo escuro e detalhes luminosos, transmitindo a ideia de inteligência artificial e tecnologia.",
-      "imageUrl": "https://i.imgur.com/nSo215h.jpg",
-      "imageHint": "3d brain"
+      "description": "Uma imagem de fundo com um gradiente abstrato e vibrante.",
+      "imageUrl": "https://images.unsplash.com/photo-1728675437273-d83d4cfaf938?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "abstract gradient"
     }
   ]
 }
