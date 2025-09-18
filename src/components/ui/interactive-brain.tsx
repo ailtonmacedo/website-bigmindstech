@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from './button';
-import { Mail } from 'lucide-react';
 import { Logo } from './logo';
 
 export function InteractiveBrain() {
@@ -70,8 +69,7 @@ export function InteractiveBrain() {
       <div className="absolute bottom-8 right-8 z-20">
         <Button asChild>
             <a href="mailto:contato@bigmindstech.com.br">
-              <Mail />
-              Contato
+              Fale Conosco
             </a>
         </Button>
       </div>
