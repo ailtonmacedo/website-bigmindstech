@@ -66,11 +66,13 @@ export function InteractiveBrain() {
         <p className="mt-6 text-lg md:text-xl text-foreground/90 max-w-2xl" style={{ transform: 'translateZ(40px)' }}>
           Criamos soluções de inteligência artificial e produtos de dados que impulsionam negócios escaláveis e inovadores.
         </p>
-        <Button asChild className="mt-8">
-          <a href="mailto:contato@bigmindstech.com.br">
-            <Mail />
-            Contato
-          </a>
+      </div>
+      <div className="absolute bottom-8 right-8 z-20">
+        <Button asChild>
+            <a href="mailto:contato@bigmindstech.com.br">
+              <Mail />
+              Contato
+            </a>
         </Button>
       </div>
     </div>
