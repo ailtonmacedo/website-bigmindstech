@@ -59,9 +59,6 @@ export function InteractiveBrain() {
         className="relative z-10 flex flex-col items-center justify-center text-center p-8"
         style={{ transform: 'translateZ(60px)' }}
       >
-        <div className="mb-8">
-            <Logo />
-        </div>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/80 pb-2.5">
           Revolucionando <br />
           <span className="text-primary">IA & Dados</span> para Negócios
